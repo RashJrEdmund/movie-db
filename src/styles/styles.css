@@ -7,6 +7,10 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 .hero {
@@ -22,13 +26,13 @@ body {
   min-width: 500px;
 }
 
-.search {
+.hero {
   display: flex;
   align-content: center;
   min-width: 300px;
 }
 
-.search input {
+.hero input {
   padding: 12px;
   font-size: 14px;
   height: 60px;
@@ -36,7 +40,7 @@ body {
   border: none;
 }
 
-.search button {
+.hero button {
   height: 40px;
   padding: 12px;
   border: none;
@@ -62,4 +66,5 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+  margin: auto;
 }

@@ -5,7 +5,7 @@ let mainContainer;
 
 function creatSearchBar() {
   const searchBar = document.createElement('form');
-  searchBar.classList.add('');
+  searchBar.classList.add('hero');
   searchBar.innerHTML = "<input type='search' name='searchTerm'><button>search<button>";
   return searchBar;
 }
@@ -31,11 +31,18 @@ function createMain() {
   return main;
 }
 
-function renderpage() {
+/* function renderpage() {
   appContainer.innerHTML = '';
   appContainer.appendChild(createHeader());
   mainContainer = createMain;
   appContainer.appendChild(createMain());
+} */
+
+function renderpage() {
+  appContainer.innerHTML = '';
+  appContainer.appendChild(createHeader());
+  mainContainer = createMain();
+  appContainer.appendChild(mainContainer);
 }
 
 function renderMovies(movies = [1, 2, 3, 4, 5]) {
