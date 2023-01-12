@@ -82,6 +82,7 @@ body {
   color: #fff;
   padding: 10px;
   text-align: center;
+  transition: 0.5s;
 }
 
 .movie p {
@@ -105,4 +106,8 @@ body {
 
 .movie:hover p {
   opacity: 1;
+}
+
+.movie:hover h2 {
+  opacity: 0;
 }

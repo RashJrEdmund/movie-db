@@ -6,7 +6,7 @@ let mainContainer;
 function creatSearchBar(options) {
   const searchBar = document.createElement('form');
   searchBar.classList.add('search');
-  searchBar.innerHTML = "<input type='search' name='searchTerm'><button>search<button>";
+  searchBar.innerHTML = "<input type='search' name='searchTerm'><button>search</button>";
 
   searchBar.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -29,6 +29,7 @@ function createMovie(movie) {
   movieElement.innerHTML = `<h2>${movie.title}</h2><p>${movie.overview}</p>`;
   const img = `https://image.tmdb.org/t/p/original/${movie.backdrop_path}`;
   movieElement.style.backgroundImage = `url(${img})`;
+
   return movieElement;
 }
 
